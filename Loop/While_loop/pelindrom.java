@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Test
+{
+	public static void main(String args[])
+{
+	Scanner sc = new  Scanner(System.in);
+	System.out.println("Enter The Number");
+	int n=sc.nextInt();
+	int sum=0, rem,rev=0;
+	int c=n;
+	
+	while(n>0)
+{
+	rem=n%10;
+	n=n/10;
+	rev=rev*10+rem;
+}
+	System.out.println("You Entered "+c);
+	System.out.println("The Reverse is "+rev);
+	if(c==rev)
+	System.out.println("The number is pelindrom");
+	 else
+	 	System.out.println("The number is not pelindrom");
+	
+}
+}
+	
